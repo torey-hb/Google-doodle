@@ -12,40 +12,42 @@
   position: absolute;
   left: 100px;
   top: 130px;
+  -webkit-animation: bikeframe 5s 1;
+          animation: bikeframe 5s 1;
 }
 
+@-webkit-keyframes bikeframe {
+  0% {
+    left: -500px;
+  }
+}
+
+@keyframes bikeframe {
+  0% {
+    left: -500px;
+  }
+}
 #rightwheel, #leftwheel {
   width: 25%;
-}
-
-#pedal {
-  width: 9%;
-  position: relative;
-  left: 294px;
-  top: 174px;
-  z-index: 1;
-  -webkit-transform-origin: left;
-          transform-origin: left;
 }
 
 #rightwheel {
   position: relative;
   top: 229px;
-  left: 160px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-animation: leftwheel 2s 5;
-          animation: leftwheel 2s 5;
+  left: 220px;
+  -webkit-animation: rightwheel 5s 1;
+          animation: rightwheel 5s 1;
 }
 
 @-webkit-keyframes rightwheel {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: -385px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(3240deg);
+            transform: rotate(3240deg);
   }
 }
 
@@ -53,30 +55,30 @@
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: -385px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(3240deg);
+            transform: rotate(3240deg);
   }
 }
 #leftwheel {
   position: relative;
-  top: 232px;
-  left: 50px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-animation: leftwheel 2s 5;
-          animation: leftwheel 2s 5;
+  top: 230px;
+  left: 106px;
+  -webkit-animation: leftwheel 5s 1;
+          animation: leftwheel 5s 1;
 }
 
 @-webkit-keyframes leftwheel {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: -500px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(3240deg);
+            transform: rotate(3240deg);
   }
 }
 
@@ -84,9 +86,10 @@
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: -500px;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(3240deg);
+            transform: rotate(3240deg);
   }
 }
