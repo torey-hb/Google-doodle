@@ -1,0 +1,96 @@
+// External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+
+/* Doodle Stage */
+#stage {
+  background: #ccc;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+// bike doodle
+
+#bikeframe{
+  width:60%;
+  position: absolute;
+  left:100px;
+  top: 130px;
+}
+
+#rightwheel, #leftwheel{
+  width: 25%;
+}
+
+
+
+
+#pedal{
+  width:9%;
+  position: relative;
+  left: 294px;
+  top: 174px;
+  z-index: 1;
+  transform-origin:left;
+  // transform: rotate(360deg);
+  // animation: leftwheel 2s 5;
+  
+}
+
+// @keyframes pedal {
+  
+//   0% {
+//       transform: rotate(0);
+//   }
+  
+//   100% {
+//       transform: rotate(360deg); 
+//   }
+   
+// }
+
+
+
+#rightwheel{
+  position: relative;
+  top: 229px;
+  left: 160px;
+  transform: rotate(360deg);
+  animation: leftwheel 2s 5 ;
+}
+
+@keyframes rightwheel {
+  
+  0% {
+      transform: rotate(0);
+  }
+  
+  100% {
+      transform: rotate(360deg); 
+  }
+   
+}
+
+
+
+
+#leftwheel{
+  position: relative;
+  top: 232px;
+  left: 50px;
+  transform: rotate(360deg);
+  animation: leftwheel 2s 5;
+}
+
+@keyframes leftwheel {
+  
+  0% {
+      transform: rotate(0);
+  }
+  
+  100% {
+      transform: rotate(360deg); 
+  }
+   
+}
+
