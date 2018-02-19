@@ -2,8 +2,8 @@
 
 /* Doodle Stage */
 #stage {
-  background: #ccc;
-  height: 400px;
+  background: #fff;
+  height: 600px;
   width: 600px;
   overflow: hidden;
   position: relative;
@@ -16,7 +16,8 @@
   width:60%;
   position: absolute;
   left:100px;
-  top: 130px;
+  top: 200px;
+  z-index:1;
   animation: bikeframe 5s 1;
 
 }
@@ -34,6 +35,8 @@
 }
 
 
+
+
 #rightwheel, #leftwheel{
   width: 25%;
 }
@@ -41,7 +44,7 @@
 
 #rightwheel{
   position: relative;
-  top: 229px;
+  top: 439px;
   left: 220px;
   animation: rightwheel 5s 1 ;
 }
@@ -64,7 +67,7 @@
 
 #leftwheel{
   position: relative;
-  top: 230px;
+  top: 440px;
   left: 106px;
   animation: leftwheel 5s 1;
 }
@@ -81,6 +84,10 @@
   }
    
 }
+
+
+
+
 
 // .rotate{
 //   animation: rotate 10s timing-function delay iteration-count direction fill-mode;
