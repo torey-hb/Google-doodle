@@ -1,0 +1,99 @@
+// Template for Google Homepage
+@import "doodle-template";
+
+/* Your Awesome Doodle */
+
+// External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+
+/* Doodle Stage */
+#stage {
+  background: #fff;
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+// bike doodle
+
+
+#bikeframe{
+  width:60%;
+  position: absolute;
+  left:100px;
+  top: 200px;
+  z-index:1;
+  animation: bikeframe 5s 1;
+
+}
+
+@keyframes bikeframe {
+  
+  0% {
+       left: -500px;
+
+  }
+  
+  100% {
+  }
+   
+}
+
+
+
+
+#rightwheel, #leftwheel{
+  width: 25%;
+}
+
+
+#rightwheel{
+  position: relative;
+  top: 439px;
+  left: 220px;
+  animation: rightwheel 5s 1 ;
+}
+
+@keyframes rightwheel {
+  
+  0% {
+      transform: rotate(0);
+      left: -385px;
+  }
+  
+  100% {
+      transform: rotate(3240deg); 
+  }
+   
+}
+
+
+
+
+#leftwheel{
+  position: relative;
+  top: 440px;
+  left: 106px;
+  animation: leftwheel 5s 1;
+}
+
+@keyframes leftwheel {
+  
+  0% {
+      transform: rotate(0);
+      left: -500px;
+  }
+  
+  100% {
+      transform: rotate(3240deg); 
+  }
+   
+}
+
+
+
+
+
+// .rotate{
+//   animation: rotate 10s timing-function delay iteration-count direction fill-mode;
+// }
